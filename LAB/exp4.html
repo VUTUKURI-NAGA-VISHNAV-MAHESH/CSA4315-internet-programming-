@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Reservation System</title>
+</head>
+<body>
+    <h1 align="center">Online Train Reservation</h1>
+    <hr>
+
+    <h2>Search Trains</h2>
+    <form>
+        From Station:
+        <input type="text" required><br><br>
+
+        To Station:
+        <input type="text" required><br><br>
+
+        Journey Date:
+        <input type="date" required><br><br>
+
+        Class:
+        <select>
+            <option>Sleeper</option>
+            <option>AC 3 Tier</option>
+            <option>AC 2 Tier</option>
+            <option>First Class</option>
+        </select><br><br>
+
+        <input type="submit" value="Search Trains">
+    </form>
+
+    <hr>
+    <h2>Available Trains</h2>
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Train Number</th>
+            <th>Train Name</th>
+            <th>Departure</th>
+            <th>Arrival</th>
+            <th>Fare</th>
+        </tr>
+        <tr>
+            <td>12601</td>
+            <td>Chennai Express</td>
+            <td>06:00 AM</td>
+            <td>02:00 PM</td>
+            <td>Rs. 600</td>
+        </tr>
+        <tr>
+            <td>12602</td>
+            <td>Superfast Express</td>
+            <td>09:00 PM</td>
+            <td>05:00 AM</td>
+            <td>Rs. 800</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Passenger Reservation Form</h2>
+    <form>
+        Passenger Name: <input type="text" required><br><br>
+        Age: <input type="number" min="1"><br><br>
+
+        Gender:
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female<br><br>
+
+        Train Number: <input type="text"><br><br>
+        Journey Date: <input type="date"><br><br>
+
+        Class:
+        <select>
+            <option>Sleeper</option>
+            <option>AC 3 Tier</option>
+            <option>AC 2 Tier</option>
+            <option>First Class</option>
+        </select><br><br>
+
+        <input type="submit" value="Reserve Ticket">
+        <input type="reset" value="Reset">
+    </form>
+
+    <hr>
+    <h2>Check PNR Status</h2>
+    <form>
+        Enter PNR Number:
+        <input type="text">
+        <input type="submit" value="Check Status">
+    </form>
+</body>
+</html>

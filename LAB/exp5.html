@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Reservation System</title>
+</head>
+<body>
+    <h1 align="center">Online Flight Reservation</h1>
+    <hr>
+
+    <h2>Search Flights</h2>
+    <form>
+        From:
+        <input type="text" placeholder="Departure city" required><br><br>
+
+        To:
+        <input type="text" placeholder="Destination city" required><br><br>
+
+        Departure Date:
+        <input type="date" required><br><br>
+
+        Return Date:
+        <input type="date"><br><br>
+
+        Travel Class:
+        <select>
+            <option>Economy</option>
+            <option>Business</option>
+            <option>First Class</option>
+        </select><br><br>
+
+        Number of Passengers:
+        <input type="number" min="1" value="1"><br><br>
+
+        <input type="submit" value="Search Flights">
+    </form>
+
+    <hr>
+    <h2>Available Flights</h2>
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Flight Number</th>
+            <th>Airline</th>
+            <th>Departure</th>
+            <th>Arrival</th>
+            <th>Fare</th>
+        </tr>
+        <tr>
+            <td>AI101</td>
+            <td>Air India</td>
+            <td>08:00 AM</td>
+            <td>10:00 AM</td>
+            <td>Rs. 4500</td>
+        </tr>
+        <tr>
+            <td>6E202</td>
+            <td>IndiGo</td>
+            <td>02:00 PM</td>
+            <td>04:00 PM</td>
+            <td>Rs. 3500</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Passenger Details</h2>
+    <form>
+        Full Name: <input type="text" required><br><br>
+        Email: <input type="email" required><br><br>
+        Phone: <input type="tel"><br><br>
+        Age: <input type="number" min="1"><br><br>
+
+        Gender:
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female<br><br>
+
+        Flight Number: <input type="text"><br><br>
+
+        Payment Method:
+        <select>
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+            <option>UPI</option>
+        </select><br><br>
+
+        <input type="submit" value="Book Flight">
+        <input type="reset" value="Reset">
+    </form>
+
+    <hr>
+    <h2>My Ticket</h2>
+    <p>Passengers can view their booking details and ticket information here.</p>
+</body>
+</html>

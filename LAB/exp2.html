@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Room Booking</title>
+</head>
+<body>
+    <h1 align="center">Grand Hotel</h1>
+    <hr>
+
+    <h2>Hotel Information</h2>
+    <p>Welcome to Grand Hotel. Book your room online.</p>
+
+    <h2>Available Room Types</h2>
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Room Type</th>
+            <th>Price Per Night</th>
+            <th>Facilities</th>
+        </tr>
+        <tr>
+            <td>Single Room</td>
+            <td>Rs. 1500</td>
+            <td>Wi-Fi, TV</td>
+        </tr>
+        <tr>
+            <td>Double Room</td>
+            <td>Rs. 2500</td>
+            <td>Wi-Fi, TV, AC</td>
+        </tr>
+        <tr>
+            <td>Deluxe Room</td>
+            <td>Rs. 4000</td>
+            <td>Wi-Fi, TV, AC, Breakfast</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Room Booking Form</h2>
+    <form>
+        Full Name: <input type="text" required><br><br>
+        Email: <input type="email" required><br><br>
+        Phone: <input type="tel"><br><br>
+        Check-in Date: <input type="date"><br><br>
+        Check-out Date: <input type="date"><br><br>
+        Number of Guests: <input type="number" min="1"><br><br>
+
+        Room Type:
+        <select>
+            <option>Single Room</option>
+            <option>Double Room</option>
+            <option>Deluxe Room</option>
+        </select><br><br>
+
+        Payment Method:
+        <input type="radio" name="payment"> Online
+        <input type="radio" name="payment"> Offline<br><br>
+
+        <input type="submit" value="Book Room">
+        <input type="reset" value="Reset">
+    </form>
+
+    <hr>
+    <h2>Contact Us</h2>
+    <p>Email: grandhotel@example.com</p>
+    <p>Phone: 9876543210</p>
+</body>
+</html>

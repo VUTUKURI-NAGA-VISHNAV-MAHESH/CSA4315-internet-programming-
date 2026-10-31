@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Ticket Booking</title>
+</head>
+<body>
+    <h1 align="center">Online Bus Ticket Booking</h1>
+    <hr>
+
+    <h2>Search Buses</h2>
+    <form>
+        From:
+        <input type="text" placeholder="Source city" required><br><br>
+
+        To:
+        <input type="text" placeholder="Destination city" required><br><br>
+
+        Journey Date:
+        <input type="date" required><br><br>
+
+        Bus Type:
+        <select>
+            <option>AC Sleeper</option>
+            <option>Non-AC Sleeper</option>
+            <option>Volvo</option>
+            <option>Seater</option>
+        </select><br><br>
+
+        <input type="submit" value="Search Bus">
+    </form>
+
+    <hr>
+    <h2>Available Buses</h2>
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Bus Name</th>
+            <th>Departure</th>
+            <th>Arrival</th>
+            <th>Fare</th>
+            <th>Seats</th>
+        </tr>
+        <tr>
+            <td>Express Travels</td>
+            <td>09:00 AM</td>
+            <td>02:00 PM</td>
+            <td>Rs. 500</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Royal Travels</td>
+            <td>10:00 PM</td>
+            <td>05:00 AM</td>
+            <td>Rs. 800</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Passenger Details</h2>
+    <form>
+        Passenger Name: <input type="text" required><br><br>
+        Age: <input type="number" min="1"><br><br>
+        Gender:
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female<br><br>
+
+        Email: <input type="email"><br><br>
+        Phone: <input type="tel"><br><br>
+
+        Seat Number:
+        <select>
+            <option>Seat 1</option>
+            <option>Seat 2</option>
+            <option>Seat 3</option>
+            <option>Seat 4</option>
+        </select><br><br>
+
+        <input type="submit" value="Book Ticket">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
